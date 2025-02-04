@@ -45,15 +45,19 @@ for info in "${hosts_info[@]}"; do
   port=$(echo $info | jq -r ".port")
   pass=$(echo $info | jq -r ".password")
 
-  script="uname -a && sleep 60 && ps aux && exit"
+  script="uname -a && sleep 10 && ps -o pid,user,%cpu,%mem,comm && exit"
   output=$(sshpass -p "$pass" ssh -o StrictHostKeyChecking=no -p "$port" "$user@$host" "bash -s" <<< "$script")
 
   echo "output:$output"
   if echo "$output" | grep -q "$host"; then
     echo "登录成功"
-    tgsend "主机:$host,用户名:$user,登录成功请检查!\n$output"
+    tgsend "登录成功请检查!
+主机:$host 用户名:$user,
+$output"
   else
     echo "登录失败"
-    tgsend "主机:$host,用户名:$user,登录失败请检查!\n$output"
+    tgsend "登录失败请检查!
+主机:$host 用户名:$user,
+$output"
   fi
 done

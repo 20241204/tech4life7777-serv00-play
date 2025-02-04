@@ -1,23 +1,7 @@
 # serv00 上的一些应用，包括 批量保号、TG消息推送
 > frankiejun 和 tech4life7777 大佬的脚本已经被我修改仅保留推送功能，只需要保号推送消息就行
 
-<div id="visitor-count">访问量：<span id="visitor-count-number">0</span></div>
-<style>
-  #visitor-count {
-    font-size: 16px;
-    color: #4CAF50;
-  }
-  #visitor-count-number {
-    font-weight: bold;
-  }
-</style>
-<script>
-  fetch('https://api.countapi.xyz/hit/frankiejun-tech4life7777-serv00-play/visits')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('visitor-count-number').innerText = data.value;
-    });
-</script>
+[![Page Views Count](https://badges.toozhao.com/badges/01JK7V9BJ38DF6AK151VK1GE4C/orange.svg)](https://badges.toozhao.com/stats/01JK7V9BJ38DF6AK151VK1GE4C "Get your own page views count badge on badges.toozhao.com")
 
 
 ## 前置工作

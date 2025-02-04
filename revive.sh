@@ -53,13 +53,13 @@ for info in "${hosts_info[@]}"; do
     echo "登录成功"
     tgsend "登录成功请检查!
 主机:$host
-用户名:$user,
+用户名:$user
 $output"
   else
     echo "登录失败"
     tgsend "登录失败请检查!
 主机:$host
-用户名:$user,
+用户名:$user
 $output"
   fi
 done

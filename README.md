@@ -1,5 +1,6 @@
 # serv00 上的一些应用，包括 批量保号、TG消息推送
 > frankiejun 和 tech4life7777 大佬的脚本已经被我修改仅保留推送功能，只需要保号推送消息就行
+> 
 ![访问量](https://visitor-badge.glitch.me/badge?page_id=frankiejun-tech4life7777-serv00-play.visitor-badge)
 
 ## 前置工作
